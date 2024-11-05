@@ -29,6 +29,8 @@ created: 2024-11-05
   TODO: Remove this comment before submitting
 -->
 
+Create a flexible, generalizable messaging standard for interoperating between L2s and between the L1 and L2s. This standard is designed to allow cryptographic enforcement of both asynchronous and synchronous interoperation, if desired. 
+
 ## Motivation
 
 <!--
@@ -41,6 +43,8 @@ created: 2024-11-05
   TODO: Remove this comment before submitting
 -->
 
+It is one of Ethereum's end goals to enable a frictionless, scalable cross-chain experience that feels like a single chain to end users REF.  Today, however, most cross-chain flows are bespoke, do not support synchronous or atomic interoperation, and are weakly enforced unless they wait for L1 finality.  This messaging standard is meant to address the long-term future of interoperability on Ethereum, which will consist of synchronous and asynchronous interoperation.  CIRC
+
 ## Specification
 
 <!--
@@ -52,6 +56,8 @@ created: 2024-11-05
 -->
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119 and RFC 8174.
+
+Each L2 wishing to opt-in to CIRC will deploy a `mailbox` smart contract. 
 
 ## Rationale
 
